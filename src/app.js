@@ -1,4 +1,5 @@
 import React from "react";
+import "app.css"
 
 class Input extends React.Component {
 	render() {
@@ -25,7 +26,7 @@ class App extends React.Component {
 
 	render() {
 		return (
-			<div onChange={this.handleChange}>
+			<div className="App" onChange={this.handleChange}>
 				<h1> Hello: {this.state.name} </h1>
 				<Input/>
 			</div>
